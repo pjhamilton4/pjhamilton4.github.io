@@ -47,6 +47,10 @@ body {
 
 .banner-img {
   margin-top: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  max-width: 100%;
 }
 
 /*
