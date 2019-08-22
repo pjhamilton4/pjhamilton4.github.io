@@ -1,13 +1,3 @@
-function displayEmail() {
-   var username = "pjhamilton4";
-
-   var hostname = "gmail.com";
-
-   var linktext = username + "@" + hostname;
-
-   document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-}
-
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 70;
@@ -250,7 +240,7 @@ jQuery(document).ready(function($){
 		//determine the minimum distance among events
 		var dateDistances = [];
 		for (i = 1; i < dates.length; i++) { 
-		    var distance = daydiff(dates[i-1], dates[i]);
+		    var distance = (daydiff(dates[i-1], dates[i])**1);
 		    dateDistances.push(distance);
 		}
 		return Math.min.apply(null, dateDistances);
