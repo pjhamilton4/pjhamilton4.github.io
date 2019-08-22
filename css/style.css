@@ -152,10 +152,10 @@ section {
 }
 
 /* Fixing experience height */
-#experience {
+/* #experience {
   height: 50em;
   flex-shrink: 0;
-}
+} */
 
 /* ---------------------------------------
   Timeline CSS
