@@ -60,6 +60,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  max-width: 100%;
   max-height: 50% !important;
 }
 
