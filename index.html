@@ -1,4 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+        <!--<![endif]-->
 <!-- 2019.8.22 - Philip Hamilton - 👋👋👋 I'm always looking for new opportunities! 📧📧 Email me at pjhamilton4 AT gmail DOT com - www.philipjhamilton.com -->
 
 <head>
@@ -26,6 +33,9 @@
 
     <!-- email script -->
     <script type="text/javascript" src="/js/email.js"></script>
+    <!-- linkedin script -->
+    <script type="text/javascript" src="/js/linkedin-badge.js"></script>
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -45,6 +55,9 @@
 </head>
 
 <body id="page-top" class="text-center">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -97,7 +110,7 @@
             </p>
             <hr>
             <p class="lead">
-                Hi, I'm Philip Hamilton, a software developer from Virginia in the United States! I have been a
+                I'm Philip Hamilton, a software developer from Virginia in the United States! I have been a
                 professional developer since 2011 and have been building computers and coding since early 2007. I
                 graduated in 2011 from Radford University in Radford, Virginia with a Bachelor's in Computer Science. I
                 enjoy studying/learning about different programming paradigms and automating all the things I have to to
@@ -125,13 +138,13 @@
                     <div class="events-wrapper">
                         <div class="events">
                             <ol>
-                                <li><a href="#0" data-date="05/07/2011" class="selected">May 2011</a></li>
-                                <li><a href="#0" data-date="08/11/2011">Aug 2011</a></li>
-                                <li><a href="#0" data-date="11/11/2012">Nov 2012</a></li>
-                                <li><a href="#0" data-date="09/10/2013">Sep 2013</a></li>
-                                <li><a href="#0" data-date="03/10/2016">Mar 2016</a></li>
-                                <li><a href="#0" data-date="12/10/2017">Dec 2017</a></li>
-                                <li><a href="#0" data-date="12/10/2018">Dec 2018</a></li>
+                                <!-- These are in the opposite order for data-date to display most current first (I'm lazy)-->
+                                <li><a href="#0" data-date="01/10/2011" class="selected">Dec 2017</a></li>
+                                <li><a href="#0" data-date="03/10/2012">Mar 2016</a></li>
+                                <li><a href="#0" data-date="09/10/2015">Sep 2013</a></li>
+                                <li><a href="#0" data-date="11/11/2016">Nov 2012</a></li>
+                                <li><a href="#0" data-date="08/11/2017">Aug 2011</a></li>
+                                <li><a href="#0" data-date="05/07/2018">May 2011</a></li>
                             </ol>
 
                             <span class="filling-line" aria-hidden="true"></span>
@@ -146,7 +159,8 @@
 
                 <div class="events-content">
                     <ol>
-                        <li class="selected" data-date="05/07/2011">
+                        <!-- Remember the data-date is fake/only used to order -->
+                        <li data-date="05/07/2018">
                             <h2>Radford University</h2>
                             <em>May, 2011</em>
                             <p>
@@ -155,7 +169,8 @@
                             </p>
                         </li>
 
-                        <li data-date="08/11/2011">
+                        <!-- Remember the data-date is fake/only used to order -->
+                        <li data-date="08/11/2017">
                             <h2>Macy's Systems and Technology</h2>
                             <em>Executive Development Program - EDP Analyst</em>
                             <em>August, 2011</em>
@@ -167,7 +182,8 @@
                             <p>Technologies used include: Java(EE 5), JasperReports, SQL(Oracle), JIRA, Jenkins, SVN</p>
                         </li>
 
-                        <li data-date="11/11/2012">
+                        <!-- Remember the data-date is fake/only used to order -->
+                        <li data-date="09/10/2015">
                             <h2>Macy's Systems and Technology</h2>
                             <em>Analyst I</em>
                             <em>August, 2012</em>
@@ -182,6 +198,7 @@
                                 JIRA, Jenkins, SVN</p>
                         </li>
 
+                        <!-- Remember the data-date is fake/only used to order -->
                         <li data-date="09/10/2013">
                             <h2>Macy's Systems and Technology</h2>
                             <em>Developer II</em>
@@ -191,7 +208,8 @@
                             </p>
                         </li>
 
-                        <li data-date="03/10/2016">
+                        <!-- Remember the data-date is fake/only used to order -->
+                        <li data-date="03/10/2012">
                             <h2>Macy's Systems and Technology</h2>
                             <em>Senior Developer</em>
                             <em>March, 2016</em>
@@ -200,18 +218,11 @@
                             </p>
                         </li>
 
-                        <li data-date="12/10/2017">
+                        <!-- Remember the data-date is fake/only used to order -->
+                        <li class="selected" data-date="01/10/2011">
                             <h2>Macy's Systems and Technology</h2>
                             <em>Lead Software Engineer</em>
                             <em>December, 2017</em>
-                            <p>
-                                TO-DO
-                            </p>
-                        </li>
-
-                        <li data-date="12/10/2018">
-                            <h2>Freelance Developer</h2>
-                            <em>December, 2018</em>
                             <p>
                                 TO-DO
                             </p>
@@ -351,10 +362,11 @@
                 <script>displayEmail();</script> or visit me on one of the following:</p>
 
             <div class="row">
+                
                 <div class="LI-profile-badge col" data-version="v1" data-size="medium" data-locale="en_US"
-                    data-type="horizontal" data-theme="light" data-vanity="philipjhamilton"><a class="LI-simple-link"
+                    data-type="vertical" data-theme="light" data-vanity="philipjhamilton"><a class="LI-simple-link"
                         href='https://www.linkedin.com/in/philipjhamilton?trk=profile-badge'>Philip Hamilton</a></div>
-
+                
                 <div class="github-card col" data-github="pjhamilton4" data-width="400" data-height="318"
                     data-theme="medium"></div>
 
@@ -370,17 +382,16 @@
             <hr>
         </footer>
     </div>
-
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <!-- linkedin script -->
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
     <!-- GitHub script -->
     <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+    <!-- LinkedIn script -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <!-- Plugin JavaScript -->
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>

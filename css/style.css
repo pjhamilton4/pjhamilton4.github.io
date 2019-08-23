@@ -60,8 +60,10 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  max-width: 100%;
+  max-height: 50% !important;
 }
+
+
 
 /*
  * Header
@@ -151,11 +153,10 @@ section {
   height: 30em;
 }
 
-/* Fixing experience height */
-/* #experience {
-  height: 50em;
-  flex-shrink: 0;
-} */
+#about {
+  height: 30am;
+}
+
 
 /* ---------------------------------------
   Timeline CSS
