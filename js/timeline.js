@@ -240,7 +240,7 @@ jQuery(document).ready(function($){
 		//determine the minimum distance among events
 		var dateDistances = [];
 		for (i = 1; i < dates.length; i++) { 
-		    var distance = (daydiff(dates[i-1], dates[i])**1);
+		    var distance = daydiff(dates[i-1], dates[i]);
 		    dateDistances.push(distance);
 		}
 		return Math.min.apply(null, dateDistances);
