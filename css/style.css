@@ -120,6 +120,15 @@ body {
   padding-top: 0em;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #about {
+    padding-bottom: 9em;
+  }
+  #experience {
+    padding-bottom: 25em;
+  }
+}
+
 /*
  * Footer
  */
