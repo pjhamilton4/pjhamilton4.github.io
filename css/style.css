@@ -1,14 +1,4 @@
 /*
-American revolutionary art
-The works of Benjamin West and John Trumbull. Art produced during the American revolution generally have high contrast and subtle hues.
-#B8B0A0 - "dark beige"
-#302D26 - "dark brown"
-#A04F45 - "red/rust"
-#AE8FA6 - "lavender"
-#E2D9C4 - "beige"
-
-*/
-/*
  * Globals
  */
 
@@ -30,7 +20,7 @@ a:hover {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #3f3f3f;
 }
 
 /*
@@ -127,7 +117,7 @@ body {
 }
 
 #experience {
-  padding-top: 5em;
+  padding-top: 0em;
 }
 
 /*
@@ -159,6 +149,13 @@ section {
   height: 30am;
 }
 
+#arrow-down {
+  color: #fff;
+  transition: opacity .6s;
+  bottom: 2rem;
+  font-size: 3rem;
+  left: 2rem;
+}
 
 /* ---------------------------------------
   Timeline CSS
