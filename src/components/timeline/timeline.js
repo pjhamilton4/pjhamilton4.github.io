@@ -7,8 +7,8 @@ const Timeline = ({ className }) => (
   <div className={className}>
     <h1>Experience</h1>
     {siteConfig.jobs && siteConfig.jobs.map(job => (
-      <article 
-        key={job.begin.month + job.begin.year} 
+      <article
+        key={job.begin.month + job.begin.year}
         className='timeline__item animate-on-scroll'
       >
         <div className="inner">
@@ -18,12 +18,15 @@ const Timeline = ({ className }) => (
           </span>
           <div className="timeline__card">
             <h2 className='timeline__card-title'>
-              {job.occupation} at {job.company} <br />
+              {job.occupation} {job.company ? `at ${job.company}` : ``} <br />
               <small className='timeline__card-title--small'>
                 ({job.duration || 'present'})
               </small>
             </h2>
             <p>{job.description}</p>
+            {job.technologies ? <React.Fragment><h2 className='timeline__card-tech'> technologies used:</h2> 
+              <p>{job.technologies}</p>
+            </React.Fragment> : <React.Fragment></React.Fragment>}
           </div>
         </div>
       </article>
@@ -33,69 +36,79 @@ const Timeline = ({ className }) => (
 
 export default styled(Timeline)`
 
+position: relative;
+:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 70px 0 0 -1px;
+  width: 1px;
+  height: calc(100% - 70px);
+  background: ${({ theme }) => theme.colors.primary};
+}
+.timeline__item {
+  width: 100%;
+  margin: 0 0 20px 0;
   position: relative;
-  :before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin: 70px 0 0 -1px;
-    width: 1px;
-    height: calc(100% - 70px);
-    background: ${({ theme }) => theme.colors.primary};
-  }
-  .timeline__item {
-    width: 100%;
-    margin: 0 0 20px 0;
-    position: relative;
-  }
-  .timeline__item:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  .timeline__item div.inner {
-    width: 100%;
-    float: left;
-    margin: 85px 0 0 0;
-  }
-  .timeline__date {
-    display: block;
-    width: 60px;
-    height: 60px;
-    padding: 3px 5px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0 0 0 -30px;
-    border-radius: 100%;
-    font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
-    background: ${({ theme }) => theme.colors.primary};
-    color: #fff;
-    box-shadow: 0 0 0 7px ${({ theme }) => theme.colors.background};
-  }
-  .timeline__date span {
-    display: block;
-    text-align: center;
-  }
-  .timeline__month {
-    font-size: 18px;
-    padding-top: 4px;
-  }
-  .timeline__year {
-    font-size: 10px;
-  }
-  .timeline__card {
-    border-radius: 6px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
-    transform: translate(-50%);
-  }
+}
+.timeline__item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.timeline__item div.inner {
+  width: 100%;
+  float: left;
+  margin: 85px 0 0 0;
+}
+.timeline__date {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 3px 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -30px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: ${({ theme }) => theme.colors.primary};
+  color: #fff;
+  box-shadow: 0 0 0 7px ${({ theme }) => theme.colors.background};
+}
+.timeline__date span {
+  display: block;
+  text-align: center;
+}
+.timeline__month {
+  font-size: 18px;
+  padding-top: 4px;
+}
+.timeline__year {
+  font-size: 10px;
+}
+.timeline__card {
+  border-radius: 6px;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  transform: translate(-50%);
+}
   .timeline__card-title {
     padding: 15px;
     margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+  }
+  .timeline__card-tech {
+    padding: 5px;
+    margin: 0;
+    background: ${({ theme }) => theme.colors.background};
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
@@ -124,6 +137,12 @@ export default styled(Timeline)`
     .timeline__card {
       transform: translate(50%);
     }
+  }
+  .timeline__card-tech {
+    background: ${({ theme }) => theme.colors.primary};
+  }
+  .timeline__card-tech:after {
+    background: ${({ theme }) => theme.colors.primary};
   }
   .timeline__card-title {
     background: ${({ theme }) => theme.colors.primary};

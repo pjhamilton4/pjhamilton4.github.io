@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-cv",
+  "name": "pjhamilton4.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing your digital curriculum with GatsbyJS",
-  "version": "0.0.1",
-  "author": "Francisco Santos <yoshi.df@gmail.com>",
+  "description": "My personal website using gatsby",
+  "version": "1.0.0",
+  "author": "Philip Hamilton <pjhamilton4@gmail.com>",
   "dependencies": {
     "@loadable/component": "5.12.0",
     "babel-plugin-styled-components": "1.10.6",
@@ -39,16 +39,17 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+
   },
   "devDependencies": {
-    "gh-pages": "2.2.0",
+    "gh-pages": "^2.2.0",
     "prettier": "1.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv"
+    "url": "https://github.com/pjhamilton4/pjhamilton4.github.io"
   },
   "bugs": {
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv/issues"
+    "url": "https://github.com/pjhamilton4/pjhamilton4.github.io/issues"
   }
 }

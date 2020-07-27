@@ -89,7 +89,7 @@ const Header = ({ location, onChangeTheme, theme }) => {
         <HeaderLinkGroup>
           {headerLinks.map((headerLink, i) => (
             <HeaderLink
-              active={location.pathname === withPrefix(headerLink.url)}
+              active={location.pathname === withPrefix(headerLink.url).toString()}
               to={headerLink.url}
               key={`header-link-${i}`}
             >

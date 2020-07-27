@@ -1,122 +1,162 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  siteTitle: 'Hello! I\'m Philip!',
+  siteDescription: ` Software Developer | Virginia Beach, Virginia | Experienced developer open to full-time opportunities!`,
+  keyWords: ['Philip', 'Hamilton', 'pjhamilton4', 'Philip Hamilton', 'Philip J. Hamilton', 'Developer'],
+  authorName: 'Philip Hamilton',
+  twitterUsername: 'pjhamilton4',
+  githubUsername: 'pjhamilton4',
+  authorAvatar: '/images/avatar.jpg',
+  authorDescription: `<strong>Software Developer // Tinkerer </strong> <br /> <br /> 
+
+    I have been a professional developer since 2011 and have been building computers and coding since early 2007. <br /><br />
+
+    After graduating college in 2011 I started working for Macy's Inc. as a Software Developer
+    writing enterprise warehousing management software in the Executive Development Program. <br />
+
+    Over 8 years I worked my way up to be a Lead Software Developer for Warehouse Management Systems at Macy's Inc. <br /><br />
+    
+    In 2019, I decided to move back to my home state of Virginia! <br /><br />
+    I currently work as a freelance developer and mostly work with Full Stack Development in Java and JavaScript. I'm always open to new opportunities!`,
   skills: [
     {
-      name: 'HTML',
-      level: 70
+      name: 'Java',
+      level: 100
     },
     {
-      name: 'CSS',
-      level: 60
+      name: 'Java EE',
+      level: 100
+    },
+    {
+      name: 'Groovy',
+      level: 100
+    },
+    {
+      name: 'Spring (Spring Boot)',
+      level: 100
     },
     {
       name: 'Javascript',
-      level: 50
+      level: 100
     },
     {
       name: 'NodeJs',
-      level: 40
+      level: 100
     },
     {
       name: 'React',
-      level: 60
+      level: 100
+    },
+    {
+      name: 'Angular',
+      level: 100
+    },
+    {
+      name: 'SQL',
+      level: 100
+    },
+    {
+      name: 'Python',
+      level: 100
+    },
+    {
+      name: 'Linux',
+      level: 100
     },
     {
       name: 'Git',
-      level: 70
-    },
-    /* more skills here */
+      level: 100
+    }
   ],
   jobs: [
-    /* more jobs here */
     {
-      company: "Gympass",
       begin: {
-        month: 'sep',
-        year: '2019'
+        month: 'jan',
+        year: '2020'
       },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
-  
-    },  {
-      company: "Lendico",
-      begin: {
-        month: 'apr',
-        year: '2018'
-      },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-  
-    }, {
-      company: "Anapro",
+      duration: 'current',
+      occupation: "Freelance Software Developer",
+      description: "Assist clients in the development and maintenance, corrective and preventive, of various software systems.",
+      technologies: "Java, Spring/Spring Boot, Groovy/Grails, JavaScript, MySQL, Git, Angular"
+    },
+    {
+      company: "Macy's Inc.",
       begin: {
         month: 'dec',
+        year: '2017'
+      },
+      duration: '2 years',
+      occupation: "Lead Software Engineer",
+      description: `Lead development work on new and existing warehouse management systems development.
+                    Mentor and lead team of developers around the world. Create and drive technical roadmaps, agile activities and provide production support.`,
+      technologies: "Java/JavaEE, Groovy/Grails, Apache Storm, JavaScript (React), Python, Oracle, Tibco ActiveSpaces, JBoss, Spring Boot, Gurobi"
+    },
+    {
+      company: "Macy's Inc.",
+      begin: {
+        month: 'mar',
         year: '2016'
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
+      duration: '1 year 10 months',
+      occupation: "Senior Developer",
+      description: "Full stack development for Macy's internal Warehouse Management System (WMS). Design, development and maintenance of Warehouse Management Systems deveoped in house using RESTful web services, event driven architecture",
+      technologies: "Java/JavaEE, Groovy/Grails, Apache Storm, JavaScript (React), Python, Oracle, Tibco ActiveSpaces, JBoss, Gurobi"
+    },
+    {
+      company: "Macy's Inc.",
       begin: {
-        month: 'set',
+        month: 'sep',
+        year: '2013'
+      },
+      duration: '2 years 7 months',
+      occupation: "Developer II",
+      description: "Development of internal real-time Warehouse Management Systems, utilitizing stream processing and optimization techniques. Involved in special initiatives to bring warehouse software to store locations.",
+      technologies: "Java/JavaEE, Groovy/Grails, Apache Storm, JavaScript(jQuery), Spring, Struts, Jasper and Hibernate"
+    }, {
+      company: "Macy's Inc.",
+      begin: {
+        month: 'aug',
         year: '2012'
       },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
+      duration: '15 months',
+      occupation: "Analyst I/Developer I",
+      description: "Development of Warehouse Management Systems from dashboards to report KPIs to warehouse automation tools.",
+      technologies: "Java/JavaEE, Groovy/Grails, JavaScript(jQuery), Spring, Struts, Jasper and Hibernate"
+    }, {
+      company: "Macy's Inc.",
+      begin: {
+        month: 'aug',
+        year: '2011'
+      },
+      duration: '1 year',
+      occupation: "Programmer/Trainee - Executive Development Program (EDP)",
+      description: "Responsible for the implementation of small features for Macy's internal warehousing solutions.",
+      technologies: "Java/JavaEE, Spring, Struts, Jasper and Hibernate"
+
     },
   ],
   portifolio: [
-    {
-      image: "/images/gatsby-starter-cv.png",
-      description: "Gatsby starter CV template",
-      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
-    },
-    {
-      image: "/images/awesome-grid.png",
-      description: "Responsive grid for ReactJS",
-      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
-    },
     /* more portifolio items here */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    twitter: "https://twitter.com/pjhamilton4",
+    linkedin: "https://www.linkedin.com/in/philipjhamilton/",
+    github: "https://github.com/pjhamilton4",
+    email: "pjhamilton4@gmail.com"
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
-  pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
+  siteUrl: 'https://www.philipjhamilton.com/',
+  pathPrefix: '/pjhamilton4.github.io', // Note: it must *not* have a trailing slash.
+  siteCover: '/images/cover.jpg',
+  googleAnalyticsId: ' UA-39163674-2',
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: "#000000cc",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/assets/favicon-32x32.png',
   headerLinks: [
     {
       label: 'Home',
       url: '/',
-    },
-    {
-      label: 'Portifolio',
-      url: '/portifolio',
     }
   ]
 }
